@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Madokami Magiconomy - Graph Analysis | chuxpy</title>
+        <script type="text/javascript" src="helios.js/lib/q.min.js"></script>
+        <script type="text/javascript" src="helios.js/lib/uuid.js"></script>
+        <script type="text/javascript" src="helios.js/lib/q-comm.js"></script>
+        <script type="text/javascript" src="helios.js/helios.js"></script>
+        <script type="text/javascript" src="d3/d3.v3.min.js"></script>
+        <script type="text/javascript" src="assets/meguca.js"></script>
+        <style>
+            .node {
+                stroke: #fff;
+                stroke-width: 1.5px;
+            }
+            .link {
+                stroke: #999;
+                stroke-opacity: 0.6;
+            }
+            body {
+                font: 10px sans-serif;
+            }
+            .axis path,
+            .axis line {
+                fill: none;
+                stroke: #000;
+                shape-rendering: crispEdges;
+            }
+
+            .x.axis path {
+                display: none;
+            }
+
+            .line {
+                fill: none;
+                stroke: steelblue;
+                stroke-width: 1.5px;
+            }
+        </style>
+    </head>
+    <body>
+        Madokami! <button onclick="acquire_point(100*Math.random(),5)">CLICK to generate a data point</button>
+    </body>
+</html>
